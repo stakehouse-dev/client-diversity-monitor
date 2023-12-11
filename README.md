@@ -1,16 +1,16 @@
-# `BlockSwap Client Diversity`
+# `Blockswap Client Diversity`
 
 Blocksap Client Diversity is a tool that adopts Blockprint for measuring client diversity of LSD and Open Index validators on the Ethereum beacon chain, based on trained classification models using block rewards and meta data.
 
 This tool was forked from: https://github.com/sigp/blockprint
 
-## Running `BlockSwap Client Diversity`
+## Running `Blockswap Client Diversity`
 
 Startup of the API can be done by executing the background_task.py script. This will start the API server and the background task that will fetch new blocks from the Lighthouse API and classify them if they are a block proposal from a LSD or Open Index validator.
 
 ### Lighthouse
 
-The BlockSwap Client Diversity API needs to be configured to connect to a Lighthouse node v2.1.2 or newer.
+The Blockswap Client Diversity API needs to be configured to connect to a Lighthouse node v2.1.2 or newer.
 
 It uses the [`/lighthouse/analysis/block_rewards`][block_rewards_endpoint] endpoint.
 
@@ -30,8 +30,8 @@ pip install -r requirements-dev.txt
 
 ### LSD Subgraph and Validator Indexing
 
-The BlockSwap Client Diversity API needs to be configured to connect to a Graph node running the LSD subgraph.
-This API also connects to BlockSwap labs' validator indexing ETL pipeline for LSD and Open Index validators.
+The Blockswap Client Diversity API needs to be configured to connect to a Graph node running the LSD subgraph.
+This API also connects to Blockswap labs' validator indexing ETL pipeline for LSD and Open Index validators.
 
 ### k-NN Classifier
 
@@ -101,7 +101,7 @@ It will take a few minutes to start-up while it loads all of the training data i
 
 ### License
 
-Copyright 2023 BlockSwap Labs, Sigma Prime and blockprint contributors
+Copyright 2023 Blockswap Labs, Sigma Prime and blockprint contributors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
